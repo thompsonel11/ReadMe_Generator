@@ -2,33 +2,10 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
+const generateMarkdown = require('INSERT MARKDOWN FILE PATH')
 
-const generateHTML = (answers) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
-
-inquirer
-  .prompt([
+const questions = [{
     {
       type: 'input',
       name: 'projectName',
@@ -102,14 +79,30 @@ inquirer
     {
       type: 'input',
       name: 'tests',
-      message: 'Provide instructions and examples for use. Include screenshots as needed.',
+      message: 'Provide instructions and examples for use. Include screenshots as needed.'
     },
+]
 
-  ])
-  .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
+// Function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(error) {
+        console.log('fileName:', fileName)
+        console.log('data:', data)
+        if (error) {
+            return console.log(error)
+        }
+    }
+    )}
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
+
+// Create function to initialize program
+function init (){
+    inquirer.prompt(questions)
+        .then(function(data) {
+            writeToFile("README.md", generateMarkdown(data));
+            console.log(data)
+    }
+    )
+}
+
+init();
