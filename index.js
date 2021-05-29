@@ -2,10 +2,9 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
-const generateMarkdown = require('generateMarkdown.js')
+const generateMarkdown = require('./generateMarkdown.js')
 
-const questions = [{
+const questions = [
     {
       type: 'input',
       name: 'projectName',
@@ -47,15 +46,10 @@ const questions = [{
       message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section. If you followed tutorials, include links to those here as well',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
-      message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. Please select a license from the list:'
-      list: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
-    },
-    {
-      type: 'input',
-      name: 'badges',
-      message: 'Badges arent necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what youre doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.'
+      message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. Please select a license from the list:',
+      choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open", "No License"],
     },
     {
       type: 'input',
@@ -85,8 +79,7 @@ function writeToFile(fileName, data) {
     }
     )}
 
-
-// Create function to initialize program
+// Create function to initialize program *** USE => ****
 function init (){
     inquirer.prompt(questions)
         .then(function(data) {
