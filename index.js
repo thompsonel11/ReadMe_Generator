@@ -3,7 +3,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generateMarkdown = require('INSERT MARKDOWN FILE PATH')
+const generateMarkdown = require('generateMarkdown.js')
 
 const questions = [{
     {
@@ -38,11 +38,6 @@ const questions = [{
     },
     {
       type: 'input',
-      name: 'linkedIn',
-      message: 'Enter your LinkedIn URL.',
-    },
-    {
-      type: 'input',
       name: 'usage',
       message: 'Provide instructions and examples for use. Include screenshots as needed.',
     },
@@ -54,7 +49,8 @@ const questions = [{
     {
       type: 'input',
       name: 'license',
-      message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).',
+      message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. Please select a license from the list:'
+      list: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
     },
     {
       type: 'input',
