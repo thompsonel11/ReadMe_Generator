@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
     console.log(license, "from badge function")
     if (license !== "No License") {
-     return `![](https://img.shields.io/badge/license-${license}-blue.svg)`;    
+     return `![](https://img.shields.io/badge/License-${license}-blue.svg)`;    
     }
      return ""; 
 }
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == "No License") {
-     return `* [License](#license)`
+     return `*[License](## License)`
    }
    return "";
 }
