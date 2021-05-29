@@ -23,13 +23,13 @@ const questions = [{
     },
     {
       type: 'input',
-      name: 'gitHubUserName',
-      message: 'what is your GitHub username?',
+      name: 'email',
+      message: 'Please enter your email address here.',
     },
     {
       type: 'input',
-      name: 'tableOfContents',
-      message: 'SEE GITHUB ',
+      name: 'gitHub',
+      message: 'Enter your GitHub username.',
     },
     {
       type: 'input',
@@ -38,12 +38,7 @@ const questions = [{
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
-    },
-    {
-      type: 'input',
-      name: 'linkedin',
+      name: 'linkedIn',
       message: 'Enter your LinkedIn URL.',
     },
     {
