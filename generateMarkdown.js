@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
     console.log(license, "from badge function")
     if (license !== "No License") {
-     return `![](https://img.shields.io/badge/License-${license}-blue.svg)`;    
+     return `![license](https://img.shields.io/badge/License-${license}-blue.svg)`;    
     }
      return ""; 
 }
@@ -65,7 +65,7 @@ function generateMarkdown(data) {
   ## Questions
   If you have questions about this application please email: ${data.email}
   Or visit my Github profile: https://github.com/${data.gitHub}
-  
+
   ${renderLicenseSection(data.license)}`
 
   

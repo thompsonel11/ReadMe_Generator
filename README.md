@@ -1,5 +1,5 @@
-# test
-    ![](https://img.shields.io/badge/License-Apache-blue.svg)
+# Pour Decisions
+    ![license](https://img.shields.io/badge/License-GNU-blue.svg)
   ### Description
   test
 
@@ -32,7 +32,7 @@
   ## Questions
   If you have questions about this application please email: test
   Or visit my Github profile: https://github.com/test
-  
+
   ## License
 
-    This project is licensed under the Apache license
+    This project is licensed under the GNU license

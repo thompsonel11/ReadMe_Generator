@@ -79,7 +79,7 @@ function writeToFile(fileName, data) {
     }
     )}
 
-// Create function to initialize program *** USE => ****
+// Create function to initialize program 
 function init (){
     inquirer.prompt(questions)
         .then(function(data) {
