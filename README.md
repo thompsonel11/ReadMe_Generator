@@ -1,5 +1,5 @@
-# Pour Decisions
-    ![license](https://img.shields.io/badge/License-GNU-blue.svg)
+# test
+    ![Academic](https://img.shields.io/badge/License-Academic-blue.svg)
   ### Description
   test
 
@@ -35,4 +35,4 @@
 
   ## License
 
-    This project is licensed under the GNU license
+    This project is licensed under the Academic license
