@@ -1,38 +1,16 @@
-# Test Title
-![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+# README Generator
+
 ### Description
-test test test 
+
+The purpose of this project is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 ### Project Link
-www.link.com
-
-## Table of Contents
-* [Installation](##Installation)
-* [Usage](##Usage)
-* [License](##License)
-* [Collaborators](##Contributing)
-* [Tests](##Test)
-* [Questions](##Questions)
-
-## Installation
-step 1, step 2, step 3, .... 
+https://github.com/thompsonel11/ReadMe_Generator
 
 ## Usage
-test test 
-
-## Features
-test test 
-
-## Contributing
-test test test 
-
-## Tests
-test test 
-
+The following below contains a demo for the README Generator: 
+https://drive.google.com/file/d/1RH5ExfSWlnvB3D_72-HcdpwFwOS6Iheu/view
+ 
 ## Questions
-If you have questions about this application please email: test@gmail.com
-Or visit my Github profile: https://github.com/test1234
-
-## License
-
-    This project is licensed under the MIT license
+If you have questions about this application please email: thompsonel2011@gmail.com 
+or visit my Github profile: https://github.com/thompsonel11
