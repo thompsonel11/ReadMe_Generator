@@ -13,7 +13,7 @@ const questions = [
     {
       type: 'input',
       name: 'projectDescription',
-      message: 'Please provide a short description the what, why and how of your project.',
+      message: 'Please provide a short description of the what, why and how of your project.',
     },
     {
       type: 'input',
