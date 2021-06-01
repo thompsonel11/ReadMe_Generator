@@ -33,10 +33,10 @@ function generateMarkdown(data) {
   console.log(data.license)
 return `# ${data.projectName}
 ${renderLicenseBadge(data.license)}
-### Description
+## Description
 ${data.projectDescription}
 
-### Project Link
+## Project Link
 ${data.link}
 
 ## Table of Contents

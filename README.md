@@ -1,6 +1,6 @@
 # README Generator
 
-### Description
+## Description
 
 The purpose of this project is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
@@ -40,7 +40,7 @@ THEN I am taken to the corresponding section of the README
 
 
 
-### Project Link
+## Project Link
 https://github.com/thompsonel11/ReadMe_Generator
 
 ## Usage
