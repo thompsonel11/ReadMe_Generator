@@ -48,7 +48,7 @@ const questions = [
     {
       type: 'list',
       name: 'license',
-      message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. Please select a license from the list:',
+      message: 'A high-quality README file contains a license. This lets other developers know what they can and cannot do with your project. Please select a license from the list:',
       choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open", "No License"],
     },
     {

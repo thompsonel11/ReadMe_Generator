@@ -59,6 +59,8 @@ ${data.features}
 ## Contributing
 ${data.credits}
 
+${data.contribute}
+
 ## Tests
 ${data.tests}
 
