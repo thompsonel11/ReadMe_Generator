@@ -2,9 +2,10 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     console.log(license, "from badge function")
-    if (license !== "No License") {return`![${license}](https://img.shields.io/badge/License-${license}-blue.svg)`;    
+    if (license !== "No License") {
+      return`![${license}](https://img.shields.io/badge/License-${license}-blue.svg)`;    
     }
-     return ""; 
+      return ""; 
 }
 
 // TODO: Create a function that returns the license link
@@ -30,42 +31,42 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data.license)
-  return `# ${data.projectName}
-    ${renderLicenseBadge(data.license)}
-  ### Description
-  ${data.projectDescription}
+return `# ${data.projectName}
+${renderLicenseBadge(data.license)}
+### Description
+${data.projectDescription}
 
-  ### Project Link
-  ${data.link}
+### Project Link
+${data.link}
 
-  ## Table of Contents
-  * [Installation](##Installation)
-  * [Usage](##Usage)
-   ${renderLicenseLink(data.license)}
-  * [Collaborators](##contributing)
-  * [Tests](##Test)
-  * [Questions](##Questions)
-  
-  ## Installation
-  ${data.installation}
+## Table of Contents
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [License](##License)
+* [Collaborators](##Contributing)
+* [Tests](##Test)
+* [Questions](##Questions)
 
-  ## Usage
-  ${data.usage}
+## Installation
+${data.installation}
 
-  ## Features
-  ${data.features}
+## Usage
+${data.usage}
 
-  ## Contributing
-  ${data.credits}
+## Features
+${data.features}
 
-  ## Tests
-  ${data.tests}
+## Contributing
+${data.credits}
 
-  ## Questions
-  If you have questions about this application please email: ${data.email}
-  Or visit my Github profile: https://github.com/${data.gitHub}
+## Tests
+${data.tests}
 
-  ${renderLicenseSection(data.license)}`
+## Questions
+If you have questions about this application please email: ${data.email}
+Or visit my Github profile: https://github.com/${data.gitHub}
+
+${renderLicenseSection(data.license)}`
 
   
 }
