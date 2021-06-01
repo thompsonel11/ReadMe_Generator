@@ -10,7 +10,7 @@ www.link.com
 * [Installation](##Installation)
 * [Usage](##Usage)
 * [License](##License)
-* [Collaborators](##Contributing)
+* [Contributing](##Contributing)
 * [Tests](##Test)
 * [Questions](##Questions)
 
